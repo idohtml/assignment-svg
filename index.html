@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SVG & Animations</title>
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <svg viewBox="0 0 2880 320">
-        <path
-          class="animatingSVG"
-          fill="#5000ca"
-          fill-opacity="1"
-          d="M0,192L16,181.3C32,171,64,149,96,165.3C128,181,160,235,192,240C224,245,256,203,288,197.3C320,192,352,224,384,202.7C416,181,448,107,480,101.3C512,96,544,160,576,181.3C608,203,640,181,672,149.3C704,117,736,75,768,69.3C800,64,832,96,864,144C896,192,928,256,960,266.7C992,277,1024,235,1056,192C1088,149,1120,107,1152,112C1184,117,1216,171,1248,170.7C1280,171,1312,117,1344,128C1376,139,1408,213,1424,250.7L1440,288V320H0Z"
-          d="M1440,192L1456,181.3C1472,171,1504,149,1536,165.3C1568,181,1600,235,1632,240C1664,245,1696,203,1728,197.3C1760,192,1792,224,1824,202.7C1856,181,1888,107,1920,101.3C1952,96,1984,160,2016,181.3C2048,203,2080,181,2112,149.3C2144,117,2176,75,2208,69.3C2240,64,2272,96,2304,144C2336,192,2368,256,2400,266.7C2432,277,2464,235,2496,192C2528,149,2560,107,2592,112C2624,117,2656,171,2688,170.7C2720,171,2752,117,2784,128C2816,139,2848,213,2864,250.7L2880,288V320H1440Z"
-        ></path>
-      </svg>
+      <button
+        class="button-three"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <svg
+          stroke="var(--button-color)"
+          fill="none"
+          class="hamburger"
+          viewBox="-10 -10 120 120"
+          width="250"
+        >
+          <path
+            class="line"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+          ></path>
+        </svg>
+      </button>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
