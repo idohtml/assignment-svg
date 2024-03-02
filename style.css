@@ -40,6 +40,7 @@ button {
 .button-three[aria-expanded="true"] .hamburger {
   translate: 10px -10px;
   rotate: 0.125turn;
+  animation: spinner 250ms ease-in-out;
 }
 
 .button-three .line {
@@ -50,4 +51,13 @@ button {
 .button-three[aria-expanded="true"] .line {
   stroke-dasharray: 60 105 60 300;
   stroke-dashoffset: -90;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
